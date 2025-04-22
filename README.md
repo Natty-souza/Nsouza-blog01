@@ -21,8 +21,7 @@ Este repositório contém um projeto de site interativo com navegação entre p�
 ## 🌐 Acesse o Site
 
 Visite o site publicado no GitHub Pages:  
-[https://natty-souza.github.io/nsouza-blog01/](https://natty-souza.github.io/nsouza-blog01/)
- https://natty-souza.github.io/Nsouza-blog01/
+[https://natty-souza.github.io/nsouza-blog01/] https://natty-souza.github.io/Nsouza-blog01/
 
 ## 📂 Estrutura do Projeto
 
