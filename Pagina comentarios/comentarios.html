@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Comentários</h2>
+        <textarea id="novoComentario" placeholder="Deixe seu comentário"></textarea>
+        <button onclick="adicionarComentario()">Adicionar Comentário</button>
+        <h3>Lista de Comentários:</h3>
+        <ul id="listaComentarios"></ul>
+    </div>
+
+    <script>
+        const comentarios = [];
+
+        function adicionarComentario() {
+            const novoComentario = document.getElementById('novoComentario').value;
+            if (novoComentario) {
+                comentarios.push(novoComentario);
+                document.getElementById('novoComentario').value = '';
+                renderizarComentarios();
+            } else {
+                alert("Por favor, escreva um comentário.");
+            }
+        }
+
+        function renderizarComentarios() {
+            const lista = document.getElementById('listaComentarios');
+            lista.innerHTML = '';
+            comentarios.forEach(comentario => {
+                const li = document.createElement('li');
+                li.textContent = comentario;
+                lista.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
