@@ -1,2 +1,2 @@
 # Nsouza-blog01
-Fazendo meu primeiro Blog. 
+Página com caixa de comentários e navegação usando HTML, CSS e JavaScript. 
